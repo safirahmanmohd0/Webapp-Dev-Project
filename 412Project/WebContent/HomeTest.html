@@ -1,0 +1,154 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Login</title>
+<style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+    body, html {
+        height: 100%;
+        color: red;
+        line-height: 1.8;
+    }
+
+    /* Create a Parallax Effect */
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    /* First image (Logo. Full height) */
+    .bgimg-1 {
+        background-image: url('https://petgroomingaz.com/wp-content/uploads/2017/12/rabbit-banner-1024x300.jpg');
+        min-height: 80%;
+    }
+
+    /* Second image (Portfolio) */
+    .bgimg-2 {
+        background-image: url("/w3images/parallax2.jpg");
+        min-height: 400px;
+    }
+
+    /* Third image (Contact) */
+    .bgimg-3 {
+        background-image: url("/w3images/parallax3.jpg");
+        min-height: 400px;
+    }
+
+    .w3-wide {letter-spacing: 10px;}
+    .w3-hover-opacity {cursor: pointer;}
+
+    /* Turn off parallax scrolling for tablets and phones */
+    @media only screen and (max-device-width: 1024px) {
+        .bgimg-1, .bgimg-2, .bgimg-3 {
+            background-attachment: scroll;
+        }
+    }
+</style>
+
+</head>
+<body>
+
+
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="login.jsp" class="w3-bar-item w3-hover-red w3-button">HOME</a>
+    <a href="aboutus.jsp" class="w3-bar-item w3-button w3-hover-red w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-hover-red w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-red"><i class="fa fa-envelope"></i> CONTACT</a>
+    <div class="w3-dropdown-hover w3-hover-red">
+    <button class="w3-button w3-hover-red">MAIN MENU</button>
+    <div class="w3-dropdown-content w3-bar-block w3-border">
+      <a href="#" class="w3-bar-item w3-button w3-hover-red">Home Page</a>
+      <a href="login.jsp" class="w3-bar-item w3-button w3-hover-red" target="_blank">Login</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-red">About Us</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-red">Products</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-red">Services</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-red">Contact Us</a>
+    </div>
+  </div>
+</div>
+    
+  </div>
+</div>
+
+
+<!-- Home Banner -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-red w3-xlarge w3-wide w3-animate-opacity">ROGER'S <span class="w3-hide-small">RABBIT </span>ROOST </span>
+  </div>
+</div>
+
+<!-- Welcome Grid -->
+<div class="w3-row-padding w3-light-grey w3-padding-hor-64 w3-container">
+  <div class="w3-content">
+  	<div class="w3-third w3-center">
+      <i class="fa fa-coffee w3-padding-hor-64 w3-text-red w3-margin-right"></i>
+    </div>
+
+    <div class="w3-twothird">
+      <h2>Welcome to Roger's Rabbit Roost</h2>
+      <h5>The place for all your rabbit needs! Rejoice!</h5>
+
+      <p class="w3-text-grey">Welcome to Roger's Rabbit Roost, the place where you may find exactly what you were looking for! And then some! Because we have it all, the rabbits, the hares, and all the lovable mares. At the Roost, you may find a bunny specific to your personality, or you may get one to eat! The choice is yours! Huzzah for freedom!.</p>
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<!-- Site Description -->
+<div class="w3-container w3-row-padding w3-padding-16 w3-center" id="SiteDesc">
+	<div class="w3-third">
+		<img src="https://media.gettyimages.com/photos/rabbit-eared-picture-id182685934" alt="black&whitebunny" height="400" width="400">
+		<h3 class="w3-black"> Check out our products!</h3>
+		<p> The Roost needs some rabbit related products which we can boast about to the world</p>
+	</div>
+	<div class="w3-third w3-">
+		<img src="https://media.gettyimages.com/photos/white-rabbit-against-black-background-closeup-picture-idsb10066134g-002" alt="JUSTwhitebunny" height="400" width="400">
+		<h3> Know about us!</h3>
+		<p> Pretentious link to the about us page</p>
+	</div>
+	
+	</div>
+
+<!-- JAVASCRIPT -->
+<script type="text/javascript">
+
+//Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-red";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-red", "");
+    }
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+<footer class="w3-center w3-black w3-animate-opacity" >
+	<p> Whoopah </p>
+</footer>
+	
+
+</body>
+</html>
